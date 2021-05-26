@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: rgb(17, 17, 224);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-report {
+    width: 60%;
+    /*height: 100vh;*/
+    border: 1px solid rgb(67, 81, 90);
+    position: relative;
+    padding: 50px;
+    box-shadow: 0px 0px 6px 8px grey;
+}
+
+.container-encabezados {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    padding-left: 40px;
+    padding-top: 20px;
+    float: left;
+}
+
+h1 {
+    padding-top: 40px;
+    padding-right: 250px;
+    font-size: 50px;
+    float: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*.................formulario.............*/
+
+form {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.f1 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.f2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ips {
+    width: 200px;
+    height: 15px;
+    margin-right: 40px;
+    border-style: none;
+    border-bottom: 2px solid rgb(45, 142, 199);
+    font-size: 20px;
+    color: coral;
+}
+
+.ipss {
+    margin-right: 110px;
+}
+
+.ips:focus {
+    outline: none;
+}
+
+.ips:focus {
+    background: grey;
+    color: white;
+    border-bottom: 3px solid rgb(26, 211, 42);
+    transition: 1s;
+}
+
+
+/*..........metrics.........*/
+
+.conteiner-metrics {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.metrics,
+h2 {
+    color: rgb(231, 126, 56);
+    margin-bottom: 10px;
+}
+
+.conteiner-metrics2,
+.conteiner-metrics3 {
+    width: 49%;
+    height: 100%;
+    background: rgb(156, 228, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.conteiner-metrics3 {
+    margin-left: 11px;
+}
+
+ol li {
+    color: rgb(56, 50, 48);
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+
+/*.............conduct and academics..........*/
+
+.h2 {
+    display: flex;
+}
+
+#academics {
+    margin-left: 390px;
+}
+
+.conteiner-conduct-academics {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.conteiner-conduct,
+.conteiner-academics {
+    width: 47%;
+    display: flex;
+    background: rgb(156, 228, 233);
+    position: relative;
+    padding-left: 10px;
+}
+
+.conteiner-conduct>p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.conteiner-academics>p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.conteiner-academics {
+    margin-left: 50px;
+}
+
+.conduct-order {
+    width: 15%;
+    height: 100%;
+    border-left: 6px solid white;
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.conduct-order>p {
+    margin-top: 5px;
+}
+
+
+/*...........teacher's remarks..............*/
+
+.teacher {
+    width: 100%;
+}
+
+h3 {
+    font-size: 20px;
+    color: rgb(47, 47, 212);
+    margin-bottom: 20px;
+}
+
+textarea {
+    background: rgb(156, 228, 233);
+    width: 100%;
+    height: 100px;
+    color: rgb(29, 15, 36);
+    font-size: 20px;
+    resize: none;
+}
+
+textarea:focus {
+    background: grey;
+    color: white;
+    transition: 1s;
+}
+
+@media screen and (max-width:1025px) {
+    img {
+        width: 90px;
+        height: 90px;
+    }
+    h1 {
+        font-size: 30px;
+        margin-left: 60px;
+    }
+    .ips {
+        width: 100%;
+        height: 15px;
+        margin-right: 40px;
+    }
+    #academics {
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    img {
+        width: 70px;
+        height: 70px;
+    }
+    .container-encabezados {
+        position: relative;
+    }
+    h1 {
+        font-size: 25px;
+        margin-right: -100px;
+        margin-top: -85px;
+    }
+    form {
+        margin-top: -70px;
+    }
+    .conteiner-academics>p {
+        font-size: 18px;
+    }
+    .conteiner-conduct>p {
+        font-size: 16px;
+    }
+    .conteiner-conduct-academics {
+        height: 130px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container-report {
+        padding: 10px;
+        width: 90%;
+        margin-left: 90px;
+    }
+    form {
+        margin-top: -120px;
+    }
+    img {
+        width: 40px;
+        height: 40px;
+    }
+    h1 {
+        font-size: 15px;
+        margin-top: -10px;
+        margin-right: -100px;
+    }
+    #academics {
+        margin-left: 90px;
+        font-size: 15px;
+    }
+    label {
+        font-size: 10px;
+    }
+    .metrics,
+    h2 {
+        font-size: 15px;
+    }
+    .conteiner-conduct,
+    .conteiner-academics {
+        width: 49%;
+        display: flex;
+        background: rgb(156, 228, 233);
+        position: relative;
+        padding-left: 5px;
+    }
+    .conteiner-academics {
+        margin-left: 10px;
+    }
+    .conteiner-conduct>p {
+        font-size: 12px;
+    }
+    .conteiner-academics>p {
+        font-size: 12px;
+    }
+    .conduct-order {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    img {
+        width: 70px;
+        height: 70px;
+        margin-left: 90px;
+    }
+    h1 {
+        font-size: 20px;
+        margin-left: -90px;
+        margin-right: -125px;
+        margin-top: -20px;
+    }
+    .container-encabezados {
+        position: relative;
+        height: 150px;
+    }
+    .container-report {
+        width: 90%;
+    }
+}
